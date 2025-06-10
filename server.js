@@ -10,7 +10,10 @@ import userRoutes from './routes/auth.js'
 dotenv.config();
 const app = express();
 
-app.use(cors({origin: 'http://localhost:3000', creadentials: true}));
+app.use(cors({
+    origin:['http://localhost:3000', 'https://dev-connect-frontend-five.vercel.app'],
+    creadentials: true
+}));
 app.use(express.json());
 
 app.get('/', (req,res) => {
