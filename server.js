@@ -12,7 +12,8 @@ connectDB();
 
 const allowedOrigins = [
   'http://localhost:3000',
-  'https://dev-connect-frontend-five.vercel.app'
+  'https://dev-connect-frontend-five.vercel.app',
+  'https://dev-connect-frontend-8hnkq9ma1-satish-pandurus-projects.vercel.app',
 ];
 
 app.use(cors({
